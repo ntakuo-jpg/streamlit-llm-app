@@ -10,9 +10,9 @@ load_dotenv()
 # OpenAI APIキーの設定
 api_key = os.getenv("OPENAI_API_KEY")
 
+# ChatOpenAIインスタンスにAPIキーを渡す
+llm = ChatOpenAI(model_name="gpt-3.5-turbo", temperature=0, openai_api_key=api_key)
 
-# LLMの初期化
-llm = ChatOpenAI(model_name="gpt-3.5-turbo", temperature=0)
 
 def get_llm_response(input_text, expert_type):
     """
