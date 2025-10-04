@@ -1,6 +1,6 @@
 from dotenv import load_dotenv
-from langchain_openai import ChatOpenAI
-from langchain_core.messages import SystemMessage, HumanMessage
+from langchain-openai import ChatOpenAI
+from langchain-core.messages import SystemMessage, HumanMessage
 import os
 import streamlit as st
 
